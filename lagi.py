@@ -7,7 +7,17 @@ from xgboost import XGBRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_percentage_error
 import plotly.graph_objects as go
+from datetime import datetime
+from zoneinfo import ZoneInfo
+import streamlit as st
 
+jam = datetime.now(ZoneInfo("Asia/Jakarta")).hour
+
+if 6 <= jam < 18:
+    tema = "siang"
+else:
+    tema = "malam"
+    
 # =========================
 # CONFIG
 # =========================

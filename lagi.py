@@ -11,7 +11,11 @@ from datetime import datetime
 from zoneinfo import ZoneInfo
 
 st.write(datetime.now(ZoneInfo("Asia/Jakarta")))
-    
+if 6 <= jam_sekarang < 18:
+    bg_gradient = "linear-gradient(180deg, #bae6fd, #e0f2fe)"
+else:
+    bg_gradient = "linear-gradient(180deg, #0f172a, #1e293b)"
+
 # =========================
 # CONFIG
 # =========================
@@ -127,6 +131,8 @@ else:
 # =========================
 # STYLE FIX FULL
 # =========================
+st.write("Jam:", jam_sekarang)
+st.write("Background:", bg_gradient)
 st.markdown(f"""
 <style>
 

@@ -192,9 +192,9 @@ div[data-testid="stSlider"] div[data-baseweb="slider"] + div div {{
 }}
 
 # ========================================================
-# REVISI TOTAL: CLEAN, SIMPLE, & FLAT MODERN INPUT COMPONENTS
+# REVISI TOTAL
 # ======================================================== */
-/* Merapikan Box Utama Input agar benar-benar rata, bersih, tanpa border hitam kaku */
+/* Box Utama Input */
 div[data-baseweb="input"], 
 div[data-baseweb="select"],
 div[data-baseweb="select"] > div,
@@ -208,7 +208,7 @@ div[data-baseweb="popover"] input {{
     transition: background-color 0.2s ease !important;
 }}
 
-/* Menghapus garis pemisah internal kaku pada tombol plus-minus number_input */
+/* Menghapus garis pemisah */
 div[data-baseweb="input"] div, 
 div[data-baseweb="input"] button {{
     border: none !important;
@@ -216,7 +216,7 @@ div[data-baseweb="input"] button {{
     box-shadow: none !important;
 }}
 
-/* Focus State saat komponen diklik: Berubah warna latar belakang soft tanpa border menyala gila */
+/* Focus State */
 div[data-baseweb="select"] > div:focus-within,
 div[data-baseweb="input"]:focus-within,
 input:focus, 
@@ -238,7 +238,7 @@ div[data-baseweb="input"] input,
 }}
 
 /* ========================================================
-   REVISI DROPDOWN LISTBOX: MATIKAN OUTER SHADOW GANDA & BORDER LAYERING
+   DROPDOWN LISTBOX
    ======================================================== */
 div[role="listbox"] {{
     background-color: #ffffff !important;
@@ -248,7 +248,7 @@ div[role="listbox"] {{
     padding: 5px !important;
 }}
 
-/* Membersihkan baris item di dalam listbox agar tidak kotak-kotak kaku */
+/* Membersihkan baris item di dalam listbox*/
 div[role="listbox"] li,
 div[role="listbox"] li div,
 div[role="listbox"] li span {{
@@ -258,7 +258,7 @@ div[role="listbox"] li span {{
     color: #334155 !important;
 }}
 
-/* Efek hover item dropdown minimalis tipis elegan */
+/* Efek hover item */
 div[role="listbox"] li:hover,
 div[role="listbox"] li[aria-selected="true"] {{
     background-color: #f1f5f9 !important;
@@ -266,7 +266,7 @@ div[role="listbox"] li[aria-selected="true"] {{
 }}
 
 /* ========================================================
-   REVISI MODERN KALENDER (st.date_input)
+   MODERN KALENDER (st.date_input)
    ======================================================== */
 div[data-baseweb="calendar"] {{
     background-color: #ffffff !important;
@@ -291,7 +291,7 @@ div[data-baseweb="calendar"] div[aria-selected="true"] button {{
     color: #ffffff !important;
 }}
 
-/* FIX KOTAK SUKSES */
+/* FIX KOTAK*/
 div[data-testid="stNotification"],
 .stAlert, 
 div.element-container div[role="alert"] {{
@@ -309,7 +309,7 @@ div.element-container div[role="alert"] * {{
     font-weight: 600 !important;
 }}
 
-/* SIDEBAR - ALWAYS CLEARGLASS */
+/* SIDEBAR - SELALU CLEARGLASS */
 section[data-testid="stSidebar"] {{
     background: rgba(255, 255, 255, 0.15) !important;
     backdrop-filter: blur(20px) !important;
@@ -369,7 +369,7 @@ section[data-testid="stSidebar"] div[role="radiogroup"] div[aria-checked="true"]
     font-weight: 600;
 }}
 
-/* DESAIN AWAN FLUFFY */
+/* AWAN*/
 .cloud {{
     position: fixed;
     background: {cloud_color};

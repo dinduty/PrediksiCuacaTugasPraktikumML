@@ -9,14 +9,8 @@ from sklearn.metrics import mean_absolute_percentage_error
 import plotly.graph_objects as go
 from datetime import datetime
 from zoneinfo import ZoneInfo
-import streamlit as st
 
-jam = datetime.now(ZoneInfo("Asia/Jakarta")).hour
-
-if 6 <= jam < 18:
-    tema = "siang"
-else:
-    tema = "malam"
+st.write(datetime.now(ZoneInfo("Asia/Jakarta")))
     
 # =========================
 # CONFIG

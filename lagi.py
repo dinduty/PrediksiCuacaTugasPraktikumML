@@ -131,8 +131,6 @@ else:
 # =========================
 # STYLE FIX FULL
 # =========================
-st.write("Jam:", jam_sekarang)
-st.write("Background:", bg_gradient)
 st.markdown(f"""
 <style>
 
